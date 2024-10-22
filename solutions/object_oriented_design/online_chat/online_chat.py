@@ -102,3 +102,10 @@ class RequestStatus(Enum):
     READ = 1
     ACCEPTED = 2
     REJECTED = 3
+ const markdownLibrary = markdownIt({
+    html: true
+  }).use(codeClipboard.markdownItCopyButton);
+  
+  eleventyConfig.setLibrary("md", markdownLibrary);
+
+};
